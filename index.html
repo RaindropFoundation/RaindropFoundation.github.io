@@ -7,17 +7,43 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             margin: 50px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center; /* Align items vertically */
+        }
+
+        .text {
+            flex: 1; /* Allow text to take up space */
+            text-align: left; /* Align text to the left */
+            padding-right: 20px; /* Spacing between text and image */
+        }
+
+        .image {
+            flex: 1; /* Allow image to take up space */
+        }
+
+        .image img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to the Raindrop Foundation Webpage!</h1>
-   <!-- <p>This is a simple webpage hosted from Google Drive.</p> -->
-    <img src="HomepageLogo.png" width="600">
-
-    <p>Our Mission: Move children through sports, culture, and education.</p>
-    <p>Vision: Every child has the opportunity to achieve his/her fullest potential and participate in and contribute to all aspects of life.</p>
+    <div class="container">
+        <div class="text">
+            <h2><strong>Our Mission</strong></h2>
+            <p>Move children through sports, culture, and education.</p>
+            
+            <h2><strong>Vision</strong></h2>
+            <p>Every child has the opportunity to achieve his/her fullest potential and participate in and contribute to all aspects of life.</p>
+        </div>
+        <div class="image">
+            <img src="HomepageLogo.png" width="600" alt="Raindrop Foundation Logo">
+        </div>
+    </div>
 </body>
 </html>
