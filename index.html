@@ -3,48 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Webpage</title>
+    <title>Raindrop Foundation</title>
     <style>
+        /* Global Styling */
         body {
             font-family: Arial, sans-serif;
-            margin: 50px;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
         }
 
+        /* Header Styling */
+        header {
+            background-color: #00457C;
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #0073C6;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content */
         .container {
             display: flex;
-            align-items: center; /* Align items vertically */
+            align-items: center;
+            justify-content: center;
+            padding: 50px;
         }
 
         .text {
-            flex: 1; /* Allow text to take up space */
-            text-align: left; /* Align text to the left */
-            padding-right: 20px; /* Spacing between text and image */
+            flex: 1;
+            text-align: left;
+            padding: 20px;
         }
 
         .image {
-            flex: 1; /* Allow image to take up space */
+            flex: 1;
         }
 
         .image img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover; /* Ensures the image covers the area */
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
         }
+
+        /* Footer */
+        footer {
+            background-color: #00457C;
+            color: white;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Welcome to the Raindrop Foundation Webpage!</h1>
+    <header>
+        <h1>Raindrop Foundation</h1>
+    </header>
+
+    <nav>
+        <a href="https://m2m.org">M2M</a>
+        <a href="https://badmintonclub.example.com">Badminton Club</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
         <div class="text">
             <h2><strong>Our Mission</strong></h2>
             <p>Move children through sports, culture, and education.</p>
             
             <h2><strong>Vision</strong></h2>
-            <p>Every child has the opportunity to achieve his/her fullest potential and participate in and contribute to all aspects of life.</p>
+            <p>Every child has the opportunity to achieve their fullest potential and participate in and contribute to all aspects of life.</p>
         </div>
         <div class="image">
             <img src="HomepageLogo.png" width="600" alt="Raindrop Foundation Logo">
         </div>
     </div>
+
+    <footer id="contact">
+        <p>Contact us at: <a href="mailto:info@raindropfoundation.org" style="color: white;">info@raindropfoundation.org</a></p>
+    </footer>
 </body>
 </html>
